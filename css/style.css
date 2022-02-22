@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@700&family=Space+Mono&display=swap');
+
+body {
+    background-color: #696969;
+    display: grid;
+    font-size: 15px;
+    font-family: 'Space Mono', monospace;
+
+    grid-template-areas:
+    "header"
+    "main"
+    "footer";
+
+    grid-template-columns: auto;
+    grid-template-rows: 50px 100vh  auto;
+}
+
+a {
+  color: inherit; 
+  text-decoration: inherit; 
+}
+
+
+header {
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #aaaaaa;
+    padding: 2rem;
+
+    grid-area: header;
+}
+
+.title {
+    font-size: 20px;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+.header-links {
+    justify-content: space-between;
+}
+
+.main_header_nav__link {
+    border: 3px solid #696969;
+    padding: 10px;
+    border-radius: 0.5em;
+    
+}
+
+.main_header_nav__link:hover {
+    border: 3px solid #696969;
+    transition: 0.5s;
+    background-color: #696969;
+    padding: 10px;
+    border-radius: 0.5em;
+    
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20%;
+    margin-right: 20%;
+    justify-content: space-evenly;
+    background-color: #ffffff;
+    padding: 1%;
+
+    grid-area: main;
+
+}
+
+.main_cards .container {
+
+}
+
+.about_me {
+    background-color: #ffee02;
+    padding: 3%;
+}
+
+footer {
+    background-color: #aaaaaa;
+    grid-area: footer;
+}
