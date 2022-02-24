@@ -12,8 +12,12 @@ body {
     "footer";
 
     grid-template-columns: auto;
-    grid-template-rows: 50px 100vh  auto;
+    grid-template-rows: 50px 170vh  auto;
 }
+
+html {
+  scroll-behavior: smooth;
+ }
 
 a {
   color: inherit; 
@@ -26,8 +30,13 @@ header {
     flex-wrap: inherit;
     align-items: center;
     justify-content: space-between;
-    background-color: #aaaaaa;
-    padding: 2rem;
+    background-color: #ffcc00;
+
+    padding: 0.5rem;
+    position: fixed;
+    height: 5%;
+    width: calc(100% - 15px);
+    
 
     grid-area: header;
 }
@@ -39,19 +48,20 @@ header {
 
 .header-links {
     justify-content: space-between;
+    align-items: flex-end - 2%;
 }
 
 .main_header_nav__link {
-    border: 3px solid #696969;
+    border: 3px solid #666666;
     padding: 10px;
     border-radius: 0.5em;
     
 }
 
 .main_header_nav__link:hover {
-    border: 3px solid #696969;
+    border: 3px solid #666666;
     transition: 0.5s;
-    background-color: #696969;
+    background-color: #666666;
     padding: 10px;
     border-radius: 0.5em;
     
@@ -61,26 +71,77 @@ header {
 main {
     display: flex;
     flex-direction: column;
-    margin-left: 20%;
-    margin-right: 20%;
-    justify-content: space-evenly;
-    background-color: #ffffff;
-    padding: 1%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+
+    justify-content: space-around;
 
     grid-area: main;
 
 }
 
-.main_cards .container {
+.main_content {
+    background-color: #ffffff;
+    padding: 1%;
+    border-radius: 0.5em;
+    font-size: 18px;
+
+  
+}
+
+.main_title {
+    font-size: 20px;
+    line-height: 0px;
+    margin: -1% -1% 0% 1%;
 
 }
 
+
 .about_me {
-    background-color: #ffee02;
-    padding: 3%;
+    padding: 1%;
+    background-color: #DFDBDB;
+    justify-content: flex-end;
+    
+}
+
+#about_me {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.hobbies {
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+}
+
+.soft_skills {
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+}
+
+
+.hobbies_cards{
+    background: #DFDBDB;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    padding: 1%;
+}
+
+.soft_skills_cards{
+    background: #DFDBDB;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    padding: 1%;
 }
 
 footer {
-    background-color: #aaaaaa;
+    background-color: #ffcc00;
     grid-area: footer;
 }
