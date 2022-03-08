@@ -76,7 +76,7 @@ main {
     margin-top: 2%;
     margin-bottom: 2%;
 
-    justify-content: flex-start;
+    justify-content: space-around;
 
     grid-area: main;
 
@@ -84,10 +84,9 @@ main {
 
 .main_content {
     background-color: #ffffff;
-    padding: 2%;
+    padding: 1%;
+    border-radius: 0.5em;
     font-size: 18px;
-    display: flex;
-    flex-direction: column;
   
 }
 
@@ -113,50 +112,63 @@ main {
     justify-content: space-around;
 }
 
-.section{
-    margin: ;
+.card_area_skills_hobbies {
+     width: 200px;
 }
 
-.card_container{
+.card_area_education {
+     width: 250px;
+}
+
+.hobbies {
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+flex-wrap: wrap;
+}
+
+.education {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
+.courses{
+     display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.soft_skills {
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+flex-wrap: wrap;
+}
+
+.card_icon{
+    width:100px;
+  height: 100px;
+  max-width: 80px;
+  max-height: 80px;
+}
+
 .card{
-    width: 150px;
-    height: auto;
-    position: relative;
-    background: #DFDBDB;
-    padding: 10px;
-    display: flex;
+      background: #DFDBDB;
+   flex-shrink: 3;
+    align-items: baseline;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    transition: 0.5s;
+    padding: 30%;
 }
 
-.card > *{
-padding: 10px;
+.card_image{
+    object-position: 50% 50%;
+
 }
 
-.card .card_icon{
-    height: 80px;
-    width: 80px;
-    background-position: center center;
-    background-size: cover;
-}
-
-.card .card_title{
-    padding: 5px;
-}
-
-.card:hover{
-    background: #ffffff;
-       transition: 0.5s;
+.card_titles {
 }
 
 footer {
