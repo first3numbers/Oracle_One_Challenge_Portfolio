@@ -28,11 +28,12 @@
 
         <div class="header_links">
             <nav class="main_header_nav">
-                <a class="main_header_nav__link" href="#hobbies">Hobbies / Skills</a>
-                <a class="main_header_nav__link" href="#education">Education</a>
-                <a class="main_header_nav__link" href="#programming_experience">Programming Experience</a>
+                <a class="main_header_nav__link" href="#hobbies_skills">Hobbies / Skills</a>
+                <a class="main_header_nav__link" href="#education_courses">Education</a>
+                <a class="main_header_nav__link" href="#projects">Programming Experience</a>
                 <a class="main_header_nav__link" href="#contact">Contact</a>
-                <a class="main_header_nav__link" href="#">Curriculum</a>
+                <a class="main_header_nav__link" href="./pdf/Currículo - Marcelo Henrique Alves Costa.pdf"
+                    download="Curriculum">Curriculum</a>
 
             </nav>
         </div>
@@ -143,7 +144,7 @@
                     <div class="card" id="hobbies">
 
                         <div class="card_image">
-                            <img src="./img/game-pads.png" class="card_icon">
+                            <img src="./img/communication.png" class="card_icon">
                         </div>
 
                         <div class="card_title">
@@ -160,7 +161,7 @@
                     <div class="card" id="hobbies">
 
                         <div class="card_image">
-                            <img src="#" class="card_icon">
+                            <img src="img/teamwork.png" class="card_icon">
                         </div>
 
                         <div class="card_title">
@@ -176,11 +177,11 @@
                     <div class="card" id="hobbies">
 
                         <div class="card_image">
-                            <img src="#" class="card_icon">
+                            <img src="img/creativity.png" class="card_icon">
                         </div>
 
                         <div class="card_title">
-                            <strong>Determination</strong>
+                            <strong>Creativity</strong>
                         </div>
 
                         <div class="card_text">
@@ -266,7 +267,7 @@
                     <div class="card" id="skills">
 
                         <div class="card_image">
-                            <img src="#" class="card_icon">
+                            <img src="img/node.png" class="card_icon">
                         </div>
 
                         <div class="card_title">
@@ -283,7 +284,7 @@
                     <div class="card" id="skills">
 
                         <div class="card_image">
-                            <img src="#" class="card_icon">
+                            <img src="img/eng.png" class="card_icon">
                         </div>
 
                         <div class="card_title">
@@ -417,47 +418,98 @@
 
                 <div class="project_card_container">
 
+                    <div class="project_card">
 
-                    <div class="project_card" id=projects">
-
-                        <div class="card_image">
-                            <img src="img/hangman.png" class="card_icon">
-                        </div>
-
-                        <div class="card_title">
-                            <strong>Hangman Minigame
-                            </strong>
-                        </div>
-
-                        <div class="card_text">
-                        </div>
-                    </div>
-
-                    <div class="project_card" id=projects">
-
-                        <div class="card_image">
+                        <div class="card_icon">
                             <img src="img/cypher.png" class="card_icon">
                         </div>
 
-                        <div class="card_title">
-                            <strong>Text Decryptor / Encryptor
-                            </strong>
-                        </div>
+                        <div class="project_card_info">
+                            <div class="card_title">
+                                <strong>Text Encryptor
+                                </strong>
+                            </div>
 
-                        <div class="card_text">
+                            <div class="card_text">
+                                <button class="btn"
+                                    onclick=" window.open('https://first3numbers.github.io/oracle_one_challenge_01/', '_blank'); return false;">Live
+                                    page</button>
+                                <button class="btn"
+                                    onclick=" window.open('https://github.com/first3numbers/oracle_one_challenge_01', '_blank'); return false;">Code</button>
+                            </div>
                         </div>
                     </div>
+
+                    <div class="project_card">
+
+                        <div class="card_icon">
+                            <img src="img/hangman.png" class="card_icon">
+                        </div>
+
+                        <div class="project_card_info">
+                            <div class="card_title">
+                                <strong>Hangman Minigame
+                                </strong>
+                            </div>
+
+                            <div class="card_text">
+                                <button class="btn"
+                                    onclick=" window.open('https://first3numbers.github.io/oracle_one_challenge_02_HANGMAN/', '_blank'); return false;">Live
+                                    page</button>
+                                <button class="btn"
+                                    onclick=" window.open('https://github.com/first3numbers/oracle_one_challenge_02_HANGMAN', '_blank'); return false;">Code</button>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
             <div class="section" id="curriculum">
                 <h2>Curriculum</h2>
 
-                <button class="btn" id="curriculum">Curriculum</button>
+                <a href="./pdf/Currículo - Marcelo Henrique Alves Costa.pdf" download="Curriculum" class="btn">Download
+                    Curriculum</a>
+
             </div>
 
             <div class="section" id="contact">
                 <h2>Contact</h2>
+
+                <div class="contact_container">
+
+                    <div class="contact_image">
+                        <img src="img/cat.png">
+                    </div>
+
+                    <div class="contact_form">
+
+                        <form method="get" class="contact_form" id="text-input">
+
+                            <label for="text-input">First Name</label>
+                            <input type="text" id="text-input" name="name" required minlength="4" maxlength="30"
+                                size="10" placeholder="*" style="resize: none">
+
+                            <label for="text-input">Second Name</label>
+                            <input type="text" id="text-input" name="name" required minlength="4" maxlength="30"
+                                size="10" placeholder="*" style="resize: none">
+
+                            <label for="text-input">E-mail</label>
+                            <input type="email" id="text-input" name="name" required minlength="4" maxlength="30"
+                                size="10" placeholder="*" style="resize: none">
+
+                            <label for="text-input">Phone Number</label>
+                            <input type="tel" id="text-input" name="name" required minlength="4" maxlength="30"
+                                size="10" placeholder="*" style="resize: none">
+
+                            <label for="text-input">Message</label>
+                            <textarea form="text-input" name="textInput" id="textInput" rows="15" cols="45" wrap="soft"
+                                placeholder="*" style="resize: none"></textarea>
+
+                            <button class="btn" type="submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
             </div>
 
         </div>

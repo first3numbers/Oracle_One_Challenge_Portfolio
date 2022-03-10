@@ -12,7 +12,7 @@ body {
     "footer";
 
     grid-template-columns: auto;
-    grid-template-rows: 50px 500vh  auto;
+    grid-template-rows: 50px 398vh  auto;
 }
 
 html {
@@ -39,6 +39,11 @@ header {
     
 
     grid-area: header;
+}
+
+.btn{
+    background: #ffcc00;
+    padding: 10px;
 }
 
 .title {
@@ -103,6 +108,7 @@ main {
     padding: 1%;
     background-color: #DFDBDB;
     justify-content: flex-end;
+    border-radius: 0.5em;
     
 }
 
@@ -114,7 +120,7 @@ main {
 }
 
 .section{
-    margin: ;
+    border-radius: 0.5em;
 }
 
 .card_container{
@@ -181,6 +187,10 @@ padding: 10px;
     transition: 0.5s;
 }
 
+.project_card_info {
+    justify-content: space-around;
+}
+
 .card_icon{
   max-width: 300px;
   max-height: 300px;
@@ -192,6 +202,24 @@ padding: 10px;
     background: #f1f1f1;
     margin: 0px 0px 30px 0px;
     padding: 1%;
+}
+
+#curriculum {
+    padding: 2%;
+    justify-content: center;
+}
+
+.contact_container{
+  display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contact_form{
+    display: flex;
+    flex-direction: column;
 }
 
 footer {
