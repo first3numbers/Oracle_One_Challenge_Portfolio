@@ -479,36 +479,59 @@
                 <div class="contact_container">
 
                     <div class="contact_image">
-                        <img src="img/cat.png">
+                        <img src="img/cat.png" class="contactImg">
                     </div>
 
                     <div class="contact_form">
 
                         <form method="get" class="contact_form" id="text-input">
 
-                            <label for="text-input">First Name</label>
-                            <input type="text" id="text-input" name="name" required minlength="4" maxlength="30"
-                                size="10" placeholder="*" style="resize: none">
+                            <form method="get" class="contact_form" id="text-input">
 
-                            <label for="text-input">Second Name</label>
-                            <input type="text" id="text-input" name="name" required minlength="4" maxlength="30"
-                                size="10" placeholder="*" style="resize: none">
+                                <div class="input_container">
+                                    <label for="text-input">Name</label>
+                                    <input type="text" id="fullName" name="name" placeholder="type your name here"
+                                        maxlength="30" pattern="^(?=.*[a-z])(?!.*[ !@#$%^&*_=+-]).{3,30}$"
+                                        data-type="fullName" style="resize: none" minlength="3" required>
+                                    <span class="input-error-message"></span>
+                                </div>
 
-                            <label for="text-input">E-mail</label>
-                            <input type="email" id="text-input" name="name" required minlength="4" maxlength="30"
-                                size="10" placeholder="*" style="resize: none">
+                                <div class="input_container">
+                                    <label for="text-input">E-mail</label>
+                                    <input type="email" id="text-input" name="name" size="10"
+                                        pattern="^(?:(?:[\w\.\-_]+@[\w\d]+(?:\.[\w]{2,6})+)[,;]?\s?)+$"
+                                        placeholder="type your e-mail here" data-type="emailAddress"
+                                        style="resize: none" required>
+                                    <span class="input-error-message"></span>
+                                </div>
 
-                            <label for="text-input">Phone Number</label>
-                            <input type="tel" id="text-input" name="name" required minlength="4" maxlength="30"
-                                size="10" placeholder="*" style="resize: none">
+                                <div class="input_container">
+                                    <label for="text-input">Phone Number</label>
+                                    <input type="tel" id="text-input" name="name" size="10" data-type="phoneNumber"
+                                        placeholder="type your phone number here" style="resize: none" required>
+                                    <span class="input-error-message"></span>
+                                </div>
 
-                            <label for="text-input">Message</label>
-                            <textarea form="text-input" name="textInput" id="textInput" rows="15" cols="45" wrap="soft"
-                                placeholder="*" style="resize: none"></textarea>
+                                <div class="input_container">
+                                    <label for="text-input">Subject</label>
+                                    <input type="text" id="text-input" name="name" size="10"
+                                        placeholder="type your subject here" data-type="subject" style="resize: none"
+                                        novalidate>
+                                    <span class="input-error-message"></span>
+                                </div>
 
-                            <button class="btn" type="submit">Submit</button>
-                        </form>
+                                <div class="input_container">
+                                    <label for="text-input">Message</label>
+                                    <textarea form="text-input" name="textInput" id="textInput" rows="15" cols="45"
+                                        wrap="soft" placeholder="type your message here" style="resize: none"
+                                        novalidate></textarea>
+                                </div>
+
+
+                                <button class="btn" type="submit">Submit</button>
+                            </form>
                     </div>
+
                 </div>
             </div>
 
@@ -517,9 +540,12 @@
 
     </main>
 
-    <footer>
-        Designed by Marcelo Henrique / @first3numbers for Oracle ONE.
-    </footer>
+    <script src="./js/index.js" type="module"></script>
+
 </body>
+
+<footer>
+    Designed by Marcelo Henrique / @first3numbers for Oracle ONE.
+</footer>
 
 </html>
