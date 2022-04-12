@@ -1,27 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@700&family=Space+Mono&display=swap');
 
 body {
-    background-color: #696969;
+    background-color: #dfdbdb;
     display: grid;
     font-size: 15px;
     font-family: 'Space Mono', monospace;
 
     grid-template-areas:
-    "header"
-    "main"
-    "footer";
+        "header"
+        "main"
+        "footer";
 
     grid-template-columns: auto;
-    grid-template-rows: 50px 420vh  auto;
+    grid-template-rows: 50px 420vh auto;
 }
 
 html {
-  scroll-behavior: smooth;
- }
+    scroll-behavior: smooth;
+}
 
 a {
-  color: inherit; 
-  text-decoration: inherit; 
+    color: inherit;
+    text-decoration: inherit;
 }
 
 
@@ -36,12 +36,12 @@ header {
     position: fixed;
     height: 5%;
     width: calc(100% - 15px);
-    
+
 
     grid-area: header;
 }
 
-.btn{
+.btn {
     background: #ffcc00;
     padding: 10px;
 }
@@ -60,7 +60,7 @@ header {
     border: 3px solid #666666;
     padding: 10px;
     border-radius: 0.5em;
-    
+
 }
 
 .main_header_nav__link:hover {
@@ -69,31 +69,34 @@ header {
     background-color: #666666;
     padding: 10px;
     border-radius: 0.5em;
-    
+
 }
 
 
 main {
     display: flex;
     flex-direction: column;
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-top: 2%;
-    margin-bottom: 2%;
+    width: 100%;
+    max-width: 80%;
 
-    justify-content: flex-start;
+    margin-left: 10%;
+    margin-right: 10%;
+
+    align-items: center;
+    justify-content: center;
 
     grid-area: main;
 
 }
 
 .main_content {
+    border-radius: 3px;
     background-color: #ffffff;
     padding: 2%;
     font-size: 18px;
     display: flex;
     flex-direction: column;
-  
+
 }
 
 .main_title {
@@ -109,7 +112,7 @@ main {
     background-color: #DFDBDB;
     justify-content: flex-end;
     border-radius: 0.5em;
-    
+
 }
 
 #about_me {
@@ -119,11 +122,11 @@ main {
     justify-content: space-around;
 }
 
-.section{
+.section {
     border-radius: 0.5em;
 }
 
-.card_container{
+.card_container {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -132,7 +135,7 @@ main {
     flex-wrap: wrap;
 }
 
-.card{
+.card {
     width: 300px;
     height: auto;
     position: inherit;
@@ -145,27 +148,27 @@ main {
     transition: 0.5s;
 }
 
-.card > *{
-padding: 10px;
+.card>* {
+    padding: 10px;
 }
 
-.card .card_icon{
+.card .card_icon {
     height: 80px;
     width: 80px;
     background-position: center center;
     background-size: cover;
 }
 
-.card .card_title{
+.card .card_title {
     padding: 5px;
 }
 
-.card:hover{
+.card:hover {
     background: #f1f1f1;
-       transition: 0.5s;
+    transition: 0.5s;
 }
 
-.project_card_container{
+.project_card_container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -174,7 +177,7 @@ padding: 10px;
     flex-wrap: wrap;
 }
 
-.project_card{
+.project_card {
     width: 800px;
     height: 300px;
     position: inherit;
@@ -191,9 +194,9 @@ padding: 10px;
     justify-content: space-around;
 }
 
-.card_icon{
-  max-width: 300px;
-  max-height: 300px;
+.card_icon {
+    max-width: 300px;
+    max-height: 300px;
     background-position: center center;
     background-size: cover;
 }
@@ -209,28 +212,28 @@ padding: 10px;
     justify-content: center;
 }
 
-.contact_container{
-  display: flex;
+.contact_container {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
 }
 
-.input_container{
+.input_container {
     display: flex;
     flex-direction: column;
 }
 
-.input_container--invalid{
-}
+.input_container--invalid {}
 
 span {
-color: red;
-margin: 5px 5px 5px 5px;
+    color: red;
+    margin: 5px 5px 5px 5px;
 }
 
-input, textarea{
+input,
+textarea {
     border: none;
     appearance: none;
     -webkit-appearance: none;
@@ -245,18 +248,18 @@ input:focus::placeholder {
     color: transparent;
 }
 
-input::placeholder{
+input::placeholder {
     color: #222;
     transition: color 0.3s ease;
 }
 
-.contact_form{
+.contact_form {
     display: flex;
     flex-direction: column;
 }
 
-.contact_container{
-  display: flex;
+.contact_container {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -268,4 +271,3 @@ footer {
     grid-area: footer;
     text-align: center;
 }
-
