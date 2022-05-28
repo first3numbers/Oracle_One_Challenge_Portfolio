@@ -12,7 +12,7 @@ body {
         "footer";
 
     grid-template-columns: auto;
-    grid-template-rows: 50px 420vh auto;
+    grid-template-rows: 50px 380vh auto;
 }
 
 html {
@@ -77,10 +77,10 @@ main {
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 80%;
+    max-width: 90%;
 
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
 
     align-items: center;
     justify-content: center;
@@ -136,7 +136,7 @@ main {
 }
 
 .card {
-    width: 300px;
+    width: 400px;
     height: auto;
     position: inherit;
     background: #DFDBDB;
@@ -261,7 +261,7 @@ input::placeholder {
 .contact_container {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
 }
